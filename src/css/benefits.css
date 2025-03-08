@@ -21,6 +21,7 @@
 
   .li-benefits-one {
     background-color: rgba(36, 37, 39, 1);
+    
   }
   
   .container-benefits {
@@ -66,9 +67,25 @@
     width: 187px;
     height: 55px;
     border: 1px solid rgba(250, 250, 250, 0.2);
-    background-color: black;
+    background-color: transparent;
     color: rgba(250, 250, 250, 1);
     border-radius: 60px;
     font-weight: 500;
     font-size: 16px;
   }
+
+  .benefits-icon {
+    stroke: rgba(250, 250, 250, 1);
+    fill: rgba(237, 59, 68, 1);
+  }
+
+  .wrapper-icon {
+    background-color: rgba(237, 59, 68, 1);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  
