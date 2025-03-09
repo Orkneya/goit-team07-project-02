@@ -1,0 +1,43 @@
+.accordion {
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;  
+    margin: auto;
+    background-color: black;  
+    padding: 20px;
+}
+
+.accordion-item {
+    color: #FAFAFA;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 5px 0;
+    width: calc(33.33% - 20px);
+}
+
+.accordion-content {
+    color: #FAFAFA99;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.accordion-button {
+    background-color: black; 
+    border-radius: 50%;
+    
+}
+
+.svg {
+    fill: white;  
+}
+@media (max-width: 768px) {
+    .accordion-item {
+        width: 100%; 
+    }
+
+}
