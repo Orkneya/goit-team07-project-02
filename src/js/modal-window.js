@@ -1,7 +1,4 @@
-import axios from 'axios';
-import swiper from 'swiper';
-import Accordion from "accordion-js";
-import "accordion-js/dist/accordion.min.css";
+
 
 
 const modal = document.getElementById("modal");
@@ -22,16 +19,11 @@ openModalBtn.addEventListener("click", openModal);
 closeModalBtn.addEventListener("click", closeModal);
 
 modal.addEventListener("click", (event) => {
-   if (event.target === closeModalBtn) {
+   if (event.target === closeModalBtn || event.target === modal) {
     closeModal();
    }
 });
 
-modal.addEventListener("click", (event) => {
-    if (event.target === modal) {
-        closeModal();
-    }
-});
 
 document.addEventListener("keydown", (event) =>  {
     if (event.key === "Escape") {
