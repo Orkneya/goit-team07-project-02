@@ -1,11 +1,16 @@
 import Swiper from 'swiper';
+import { Navigation, Pagination, Keyboard } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/navigation';
 import axios from 'axios';
 
 new Swiper(".swiper", {
     slidesPerView: 4,
     spaceBetween: 16,
     slidesPerGroup: 1,
+
+    modules: [Navigation, Pagination, Keyboard ],
+
     navigation: {
       nextEl: ".reviews-btn-next",
       prevEl: ".reviews-btn-prev",
