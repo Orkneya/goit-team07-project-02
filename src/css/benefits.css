@@ -1,3 +1,15 @@
+.content-benefits {
+  background-color: black;
+  width: 100%;
+}
+
+.container-benefits {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 412px;
+}
+
 .title-benefits {
     text-transform: uppercase;
     color: rgba(250, 250, 250, 0.4);
@@ -21,14 +33,25 @@
 
   .li-benefits-one {
     background-color: rgba(36, 37, 39, 1);
-    
+    border-radius: 20px;
+    width: 332px;
+    height: 270px;
+    padding-right: 24px;
   }
-  
-  .container-benefits {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    height: 556px;
+
+  .li-benefits-two {
+    background-color: rgba(36, 37, 39, 1);
+    border-radius: 20px;
+  }
+
+  .li-benefits-three {
+    background-color: rgba(36, 37, 39, 1);
+    border-radius: 20px;
+  }
+
+  .li-benefits-fore {
+    background-color: rgba(36, 37, 39, 1);
+    border-radius: 20px;
   }
   
   .list-benefits-content {
@@ -44,8 +67,6 @@
     flex-direction: column;
     width: 332px;
     height: 270px;
-    
-    ;
   }
   
   .benefits-expertise {
@@ -72,6 +93,9 @@
     border-radius: 60px;
     font-weight: 500;
     font-size: 16px;
+    margin-top: auto;
+    margin-right: 40px;
+    margin-left: auto;
   }
 
   .benefits-icon {
@@ -87,6 +111,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    margin-bottom: 64px;
+    margin-bottom: 40px;
+    margin-top: 24px;
+    margin-right: 24px;
   }
   
