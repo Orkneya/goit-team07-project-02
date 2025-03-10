@@ -146,7 +146,21 @@
     margin-top: 64px;
     margin-right: 500px;
     margin-left: auto;
+    text-align: center;
+    line-height: 55px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
   }
+
+  .btn-benefits:hover {
+    background-color: rgba(237, 59, 68, 1); 
+    color: #fff;
+}
+
+  .btn-benefits:focus {
+  background-color: rgba(237, 59, 68, 1); 
+  color: #fff;
+}
 
   @media (max-width: 768px) {
     .btn-benefits {
