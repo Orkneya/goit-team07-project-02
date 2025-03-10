@@ -1,7 +1,10 @@
 .reviews-section {
   margin-top: 64px;
-  padding-left: 5px;
-  padding-right: 5px;
+
+  @media screen and (max-width: 375px) {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
   @media screen and (min-width: 768px) {
     margin-top: 96px;
@@ -100,7 +103,7 @@
 
 .reviews-btn-prev:disabled .rev-icon,
 .reviews-btn-next:disabled .rev-icon {
-  fill:none;
+  fill: none;
   stroke: #3b3b3b;
 }
 
