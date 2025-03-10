@@ -1,43 +1,65 @@
 .accordion {
     display: flex;
     flex-wrap: wrap;  
-    gap: 20px;
-    width: 100%;
-    max-width: 1000px;  
-    margin: auto;
-    background-color: black;  
+    gap: 0px;
+    width: 100%;  
+    margin: auto; 
     padding: 20px;
 }
+
+.accordion-item:nth-child(odd) {
+    border-left: none
+}
+
+.accordion-item:nth-child(even) {
+    border-right: none
+}
+
 
 .accordion-item {
     color: #FAFAFA;
     font-size: 20px;
     font-weight: 600;
     padding: 10px;
-    margin: 5px 0;
-    width: calc(33.33% - 20px);
+    margin: 0;
+    width: calc(50% - 10px);
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    position: relative;
+    
 }
+
+
 
 .accordion-content {
     color: #FAFAFA99;
     font-size: 16px;
     font-weight: 500;
-    padding: 10px;
     margin: 5px 0;
 }
 
+
+
 .accordion-button {
-    background-color: black; 
+    border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 50%;
-    
+    background-color: #1c1d20;
+    position: absolute;
+    right: 10px;
+
 }
 
 .svg {
     fill: white;  
+
 }
+
+
+
 @media (max-width: 768px) {
     .accordion-item {
         width: 100%; 
+        border-left: none;
+        border-right: none;
     }
 
 }
