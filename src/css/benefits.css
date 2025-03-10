@@ -85,14 +85,15 @@
     .list-benefits li {
       width: 330px;
     }
-  }
+  } 
 
   .li-benefits-one {
     background-color: rgba(36, 37, 39, 1);
     border-radius: 20px;
-    width: 332px;
-    height: 270px;
-    padding-right: 24px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0px;
   }
 
   .block-text {
@@ -102,17 +103,28 @@
   .li-benefits-two {
     background-color: rgba(36, 37, 39, 1);
     border-radius: 20px;
-    padding-right: 24px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0px;
   }
 
   .li-benefits-three {
     background-color: rgba(36, 37, 39, 1);
     border-radius: 20px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0px;
   }
 
-  .li-benefits-fore {
+  .li-benefits-four {
     background-color: rgba(36, 37, 39, 1);
     border-radius: 20px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0px;
   }
   
   .box-li-benefits {
@@ -142,7 +154,7 @@
     display: block;
     width: 187px;
     height: 55px;
-    border: 1px solid rgba(250, 250, 250, 0.2);
+    border: 2px solid rgba(250, 250, 250, 0.2);
     background-color: transparent;
     color: rgba(250, 250, 250, 1);
     border-radius: 60px;
