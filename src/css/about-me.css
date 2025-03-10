@@ -86,7 +86,18 @@
       margin-top: 96px;
     }
   }
-  
+  .about-skills-item{
+    max-width: 130px;
+    height: 130px;
+    margin: 0!important; 
+
+    @media screen and (min-width: 768px){
+      max-width: 200px;
+      height: 200px;
+    }
+
+
+  }
   .about-skills-txt {
     font-weight: 500;
     line-height: 24px;
