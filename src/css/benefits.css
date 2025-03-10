@@ -23,13 +23,22 @@
   height: auto;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (min-width: 769px) {
   .container-benefits {
     justify-content: space-between;
   }
 }
 
 @media  screen and (max-width: 1440px) {
+  .container-benefits {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;  
+  }
+}
+
+@media  screen and (min-width: 1441px) {
   .container-benefits {
   flex-direction: row;
   flex-wrap: wrap;
@@ -179,17 +188,47 @@
 @media  screen and (max-width: 768px) {
   .btn-benefits {
     margin-left: 42px;
+
   }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .btn-benefits {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: 42px;
+  }
+}
+@media  screen and (max-width: 1440px) {
+  .btn-benefits {
+    display: block;
+    width: fit-content;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: 680px;
+    width: 187px;
+    height: 55px;
+  }
+}
+
+@media  screen and (min-width: 1441px) {
+  .btn-benefits {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: 840px;
+  } 
 }
 
 .btn-benefits:hover {
   background-color: rgba(237, 59, 68, 1); 
   color: #fff;
+  border: 2px solid rgba(250, 250, 250, 0.2);
 }
 
 .btn-benefits:focus {
 background-color: rgba(237, 59, 68, 1); 
 color: #fff;
+border: 2px solid rgba(250, 250, 250, 0.2);
 }
 
 .benefits-icon {
