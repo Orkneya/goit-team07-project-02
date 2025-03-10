@@ -102,12 +102,12 @@
 }
 
 .reviews-btn-prev:disabled,
-.reviews-btn-next :disabled {
+.reviews-btn-next:disabled {
   border: 1px solid rgba(250, 250, 250, 0.2);
 }
 
 .reviews-btn-prev:disabled .rev-icon,
-.reviews-btn-next :disabled .rev-icon {
+.reviews-btn-next:disabled .rev-icon {
   fill: #3b3b3b;
 }
 
