@@ -4,69 +4,66 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import axios from 'axios';
 
-new Swiper(".swiper", {
-    slidesPerView: 4,
-    spaceBetween: 16,
-    slidesPerGroup: 1,
+new Swiper('.swiper', {
+  slidesPerView: 4,
+  spaceBetween: 16,
+  slidesPerGroup: 1,
 
-    modules: [Navigation, Pagination, Keyboard ],
+  modules: [Navigation, Pagination, Keyboard],
 
-    navigation: {
-      nextEl: ".reviews-btn-next",
-      prevEl: ".reviews-btn-prev",
+  navigation: {
+    nextEl: '.reviews-btn-next',
+    prevEl: '.reviews-btn-prev',
+  },
+
+  keyboard: {
+    enabled: true,
+    pageUpDown: true,
+  },
+
+  mousewheel: {
+    invert: true,
+  },
+
+  breakpoints: {
+    310: {
+      slidesPerView: 1,
     },
-  
-    keyboard: {
-      enabled: true,
-      pageUpDown: true,
+    768: {
+      slidesPerView: 2,
     },
-  
-    mousewheel: {
-      invert: true,
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 10,
     },
-  
-    breakpoints: {
-      310: {
-        slidesPerView: 1,
-      },
-      740: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-      1440: {
-        slidesPerView: 4,
-        spaceBetween: 10,
-      },
-    },
-  });
-  
-  const refs = {
-    list: document.querySelector(".reviews-list"),
-  };
-  
-  document.addEventListener("DOMContentLoaded", async () => {
-    try {
-      const result = await getReviews();
-      const markup = reviewsTemplate(result);
-      refs.list.innerHTML = markup;
-    } catch (error) {
-      refs.list.innerHTML = `<p class="reviews-err">---Not found---</p>`;
-      console.log(error);
-    }
-  });
-  
-  async function getReviews() {
-    const baseURL = "https://portfolio-js.b.goit.study/api/reviews";
-    const result = await axios.get(baseURL);
-    return result.data;
+  },
+});
+
+const refs = {
+  list: document.querySelector('.reviews-list'),
+};
+
+document.addEventListener('DOMContentLoaded', async () => {
+  try {
+    const result = await getReviews();
+    const markup = reviewsTemplate(result);
+    refs.list.innerHTML = markup;
+  } catch (error) {
+    refs.list.innerHTML = `<p class="reviews-err">---Not found---</p>`;
+    console.log(error);
   }
-  
-  function reviewTemplate(item) {
-    const { author, avatar_url, review } = item;
-  
-    return `<li class="reviews-item swiper-slide">
+});
+
+async function getReviews() {
+  const baseURL = 'https://portfolio-js.b.goit.study/api/reviews';
+  const result = await axios.get(baseURL);
+  return result.data;
+}
+
+function reviewTemplate(item) {
+  const { author, avatar_url, review } = item;
+
+  return `<li class="reviews-item swiper-slide">
               <img
                 class="reviews-img"
                 src="${avatar_url}"
@@ -75,8 +72,8 @@ new Swiper(".swiper", {
               <h2 class="reviews-name">${author}</h2>
               <p class="reviews-txt">${review}</p>
             </li>`;
-  }
-  
-  function reviewsTemplate(arr) {
-    return arr.map(reviewTemplate).join("");
-  }
+}
+
+function reviewsTemplate(arr) {
+  return arr.map(reviewTemplate).join('');
+}
