@@ -108,13 +108,15 @@
 
 .reviews-btn-prev:disabled .rev-icon,
 .reviews-btn-next:disabled .rev-icon {
-  fill: #3b3b3b;
+  fill:none;
+  stroke: #3b3b3b;
 }
 
 .rev-icon {
   width: 24px;
   height: 24px;
-  fill: #fafafa;
+  fill: none;
+  stroke: #fafafa;
 
   @media screen and (min-width: 768px) {
     width: 32px;
