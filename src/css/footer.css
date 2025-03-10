@@ -13,6 +13,7 @@ body {
 }
 
 .work-together {
+  margin-top: 80px;
   position: relative;
   color: #fafafa;
   margin: 0 auto;
@@ -24,6 +25,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .work-together {
+    margin-top: 32px;
     background: url('../img/footer/m-work-together-glass.png') top right
       no-repeat;
   }
@@ -36,6 +38,7 @@ body {
     background: url('../img/footer/m-work-together-glass-2x.png') top right
       no-repeat;
     background-size: 85px 552px;
+    margin-top: 32px;
   }
 }
 
