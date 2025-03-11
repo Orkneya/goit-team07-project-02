@@ -1,15 +1,14 @@
 .content-benefits {
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     flex-direction: column;
     align-items: center;
     height: auto;
     width: 100%;
-  
   }
   
   .container-benefits {
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -43,13 +42,21 @@
     align-self: flex-start;
     white-space: nowrap;
     font-size: 16px;
-    margin-left: 32px;
+    margin-left: 32px; 
+    margin-top: 64px;
   }
-  
+
+   @media screen and (max-width: 768px) {
+    .title-benefits {
+      margin-top: 96px;
+    }
+  } 
+
   @media screen and (min-width: 1090px) and (max-width: 1440px) {
     .title-benefits {
       position: relative;
       top: 50px;
+      margin-top: 164px;
     }
   }
   
@@ -57,6 +64,7 @@
     .title-benefits {
       position: relative;
       top: 50px;
+      margin-top: 164px;
     }
   }
   
@@ -120,7 +128,7 @@
   }
   
   .li-benefits-one {
-    background-color: rgba(36, 37, 39, 1);
+    background-color: rgba(24, 25, 27);
     border-radius: 20px;
     width: 100%;
     max-width: 100%;
@@ -133,7 +141,7 @@
   } 
   
   .li-benefits-two {
-    background-color: rgba(36, 37, 39, 1);
+    background-color: rgba(24, 25, 27);
     border-radius: 20px;
     width: 100%;
     max-width: 100%;
@@ -142,7 +150,7 @@
   }
   
   .li-benefits-three {
-    background-color: rgba(36, 37, 39, 1);
+    background-color: rgba(24, 25, 27);
     border-radius: 20px;
     width: 100%;
     max-width: 100%;
@@ -151,7 +159,7 @@
   }
   
   .li-benefits-four {
-    background-color: rgba(36, 37, 39, 1);
+    background-color: rgba(24, 25, 27);
     border-radius: 20px;
     width: 100%;
     max-width: 100%;
