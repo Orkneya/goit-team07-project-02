@@ -1,5 +1,5 @@
 
-
+document.addEventListener("DOMContentLoaded", function() {
 const modal = document.getElementById("modal");
 const openModalBtn = document.getElementById("openModal");
 const closeModalBtn = document.getElementById("closeModal");
@@ -28,5 +28,5 @@ document.addEventListener("keydown", (event) =>  {
     if (event.key === "Escape") {
         closeModal();
     }
+ });
 });
-
