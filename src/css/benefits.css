@@ -1,6 +1,6 @@
-.html, body {
+/* .html, body {
   background-color: black;
-}
+} */
 
 .content-benefits {
   background-color: black;
@@ -47,7 +47,21 @@
   align-self: flex-start;
   white-space: nowrap;
   font-size: 16px;
-  margin-left: 24px;
+  margin-left: 32px;
+}
+
+@media screen and (min-width: 1090px) and (max-width: 1440px) {
+  .title-benefits {
+    position: relative;
+    top: 50px;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .title-benefits {
+    position: relative;
+    top: 50px;
+  }
 }
 
 .list-benefits-content {
