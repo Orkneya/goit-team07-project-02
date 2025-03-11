@@ -6,3 +6,4 @@ https://github.com/Orkneya/goit-team07-project-02/pull/11 секція benefits 
 https://github.com/Orkneya/goit-team07-project-02/pull/12 зміни в спрайт 
 https://github.com/Orkneya/goit-team07-project-02/pull/37 зміни в секції benefits в гілці проєкту 
 https://github.com/Orkneya/goit-team07-project-02/pull/38 зміни в секції benefits контейнер і марджин топ 
+https://github.com/Orkneya/goit-team07-project-02/pull/40 зміни заголовка в різних точках перелому адаптивної верстки
