@@ -53,14 +53,14 @@
     }
   } 
   
-  @media screen and (min-width: 769px) and (max-width: 1440px) {
+  @media screen and (min-width: 769px) and (max-width: 1100px) {
     .title-benefits {
-      position: relative;
-      top: 80px;
+        margin-top: 96px;
+        margin-bottom: 32px;
     }
   }
-
-  @media screen and (min-width: 1441px) {
+  
+  @media screen and (min-width: 1440px) {
     .title-benefits {
       position: relative;
       top: 80px;
