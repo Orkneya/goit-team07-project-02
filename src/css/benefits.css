@@ -105,13 +105,6 @@
     }
   }
   
-  @media screen and (min-width: 530px) and (max-width: 768px) {
-    .list-benefits li {
-      flex: 1 1 calc(50% - 20px); 
-      width: calc(40% - 20px);
-    }
-  }
-  
   @media screen and (min-width: 769px) and (max-width: 1440px) {
     .list-benefits li {
       flex: 1 1 calc(50% - 20px); 
