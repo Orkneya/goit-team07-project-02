@@ -133,3 +133,61 @@
 .header-btn:hover {
     background: #e0373f;
 }
+
+@media screen and (max-width: 375px) {
+    .header {
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+        text-align: left;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .header-svg {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        margin-top: 0;
+    }
+
+    .header-list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .header-element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+    }
+
+    .header-menu,
+    .header-btn {
+        display: none;
+    }
+}
