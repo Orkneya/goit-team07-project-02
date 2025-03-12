@@ -1,14 +1,26 @@
 .cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 960px;
+  position: relative;
+  height: 508px;
   background-color: #212121;
   background-image: url(../img/elements.png);
   background-size: cover;
   background-position: center;
-  overflow: hidden; /* add this line */
+  overflow: hidden; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media screen and (min-width: 768px) {
+  .cover {
+    height: 960px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cover {
+    height: 960px;
+  }
 }
 
 .cover__title {
@@ -68,6 +80,14 @@
   padding: 26px;
 }
 
+
+@media screen and (max-width: 375px) {
+  .marquee__line {
+    min-width: 282px;
+    min-height: 162px;
+  }
+}
+
 @keyframes marqueeLine {
   0% {
     transform: translateX(-20%);
@@ -81,9 +101,3 @@
   }
 }
 
-
-@media screen and (max-width: 375px) {
-    .marquee { 
-      transform: scale(1.7);
-  }
-}
