@@ -27,6 +27,10 @@ document.addEventListener('DOMContentLoaded', function () {
       nextEl: nextBtn,
       prevEl: prevBtn,
     },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
     on: {
       init: function () {
         updateButtonState(this);
@@ -47,4 +51,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   prevBtn.addEventListener('click', () => swiper.slidePrev());
   nextBtn.addEventListener('click', () => swiper.slideNext());
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'ArrowLeft') {
+      swiper.slidePrev();
+    } else if (event.key === 'ArrowRight') {
+      swiper.slideNext();
+    }
+  });
 });
