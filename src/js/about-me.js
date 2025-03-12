@@ -3,6 +3,8 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
 const swiper = new Swiper('.about-skills-swiper', {
   slidesPerView: 6,
@@ -46,4 +48,14 @@ document.addEventListener('keydown', e => {
   } else if (e.key === 'ArrowLeft') {
     swiper.slidePrev();
   }
-}); 
+});
+
+new Accordion('.about-info', {
+  duration: 500,
+  showMultiple: true,
+  openOnInit: [0],
+  elementClass: 'about-info-item',
+  triggerClass: 'about-info-btn',
+  panelClass: 'about-info-content',
+  activeClass: 'is-active',
+});
