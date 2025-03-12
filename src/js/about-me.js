@@ -3,6 +3,9 @@ import { Navigation, Pagination, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
+import Accordion from "accordion-js";
+import "accordion-js/dist/accordion.min.css";
+
 
 new Swiper(".about-skills-swiper", {
     slidesPerView: 6,
@@ -57,3 +60,14 @@ new Swiper(".about-skills-swiper", {
       },
     },
   });
+
+  new Accordion(".about-info", {
+    duration: 500,
+    showMultiple: true,
+    openOnInit:[0],
+    elementClass:"about-info-item",
+    triggerClass:"about-info-btn",
+    panelClass:"about-info-content",
+    activeClass:"is-active",
+  
+  });  
