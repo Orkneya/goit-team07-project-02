@@ -1,7 +1,8 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Keyboard } from 'swiper/modules';
+import { Navigation, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/keyboard';
 
 
 new Swiper(".about-skills-swiper", {
@@ -9,7 +10,7 @@ new Swiper(".about-skills-swiper", {
     slidesPerGroup: 1,
     loop: true,
 
-    modules: [Navigation, Pagination, Keyboard ],
+    modules: [Navigation, Keyboard ],
 
     navigation: {
       nextEl: ".about-skills-btn",
