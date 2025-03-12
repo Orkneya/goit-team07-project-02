@@ -9,6 +9,7 @@
   overflow: hidden; 
   margin-left: auto;
   margin-right: auto;
+  margin-top: 64px;
 }
 /* for git pulll */
 
@@ -16,12 +17,14 @@
   .cover {
     min-height: 960px;
     height: auto;
+    margin-top: 96px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .cover {
     height: 960px;
+    margin-top: 164px;
   }
 }
 
