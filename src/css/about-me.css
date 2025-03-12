@@ -132,9 +132,14 @@
   }
 }
 
-.ellips-red {
+.swiper-slide-active .about-skills-txt{
   background-color: #ed3b44;
+  cursor: default;
 }
+
+/* .ellips-red {
+  background-color: #ed3b44;
+} */
 
 .about-skills-btn {
   width: 28px;
