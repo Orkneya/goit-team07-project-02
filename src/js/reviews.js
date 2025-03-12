@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Keyboard } from 'swiper/modules';
+import { Navigation, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import axios from 'axios';
@@ -9,7 +9,7 @@ new Swiper('.reviews', {
   spaceBetween: 16,
   slidesPerGroup: 1,
 
-  modules: [Navigation, Pagination, Keyboard],
+  modules: [Navigation, Keyboard],
 
   navigation: {
     nextEl: '.reviews-btn-next',
