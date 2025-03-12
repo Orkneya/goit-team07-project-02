@@ -46,4 +46,4 @@ document.addEventListener('keydown', e => {
   } else if (e.key === 'ArrowLeft') {
     swiper.slidePrev();
   }
-});
+}); 
