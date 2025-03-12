@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import axios from 'axios';
 
-new Swiper('.swiper', {
+new Swiper('.reviews', {
   slidesPerView: 4,
   spaceBetween: 16,
   slidesPerGroup: 1,
