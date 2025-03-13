@@ -2,8 +2,8 @@
   <div class="container header-container">
     <a href="/" class="logo">
       <img
-        srcset="./img/image_1.png 1x, ./img/image_2.png 2x"
-        src="./img/image_1.png"
+        srcset="/img/image_1.png 1x, /img/image_2.png 2x"
+        src="/img/image_1.png"
         width="80"
         alt="Company Logo"
       />
@@ -62,13 +62,23 @@
         </li>
       </ul>
     </div>
+    <div class="menu-btn" id="toggleButton">Menu</div>
 
-    <button class="header-btn" type="button">Order the project</button> 
-        <nav class="header-menu">
-        <a href="#menu" class="menu-current">Menu</a>
-        <a href="#aboutme" class="scroll-link">Aboutme</a>
-        <a href="#benefits" class="scroll-link">Benefits</a>
-        <a href="#projects" class="scroll-link">Projects</a>
-        <a href="#faq" class="scroll-link">FAQ</a>
+    <nav class="header-nav">
+      <ul class="nav-list" id="links">
+        <li><a class="nav-link" href="#about">About me</a></li>
+        <li><a class="nav-link" href="#benefits">Benefits</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#faq">FAQ</a></li>
+      </ul>
     </nav>
+
+    <a href="#footer" class="anchor-footer">Order the project</a>
+
+    <button class="burger-btn" type="button" id="openMenuBtn" data-menu-open>
+      <svg class="burger-icon" width="28" height="28">
+        <use href="/img/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
 </header>
