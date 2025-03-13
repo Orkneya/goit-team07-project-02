@@ -5,6 +5,7 @@ display: flex;
 justify-content: space-between;
 position: absolute;
 top: 0;
+left: 0;
 width: 100%;
 height: auto;
 z-index: 1;
@@ -78,7 +79,6 @@ color: #fafafa;
 }
 
 .anchor-footer {
-/* position: absolute; */
 right: 60px;
 display: block;
 font-weight: 500;

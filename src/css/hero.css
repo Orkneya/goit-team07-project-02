@@ -1,4 +1,5 @@
 .hero-container {
+  /* position: relative; */
   background-image: url('../img/Background.jpg');
   background-size: cover;  
   background-position: center; 
