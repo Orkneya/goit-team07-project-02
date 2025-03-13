@@ -62,8 +62,8 @@
 }
 
 .svg {
-  stroke: #fff;
-  fill: none;
+  
+  fill: #fff;
 
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 50%;
