@@ -7,7 +7,7 @@
             What programming languages are most often used in your project? 
             <button type="button" class="accordion-button">
                 <svg class="svg" width="16" height="16">
-                    <use href="../img/icon.svg#icon-down"></use>
+                    <use href="/img/icon.svg#icon-down"></use>
                 </svg>
             </button>
             <div class="accordion-content">
@@ -19,7 +19,7 @@
             What are the deadlines for the project? 
             <button type="button" class="accordion-button">
                 <svg class="svg" width="16" height="16">
-                    <use href="../img/icon.svg#icon-down"></use>
+                    <use href="/img/icon.svg#icon-down"></use>
                 </svg>
             </button>
             <div class="accordion-content">
@@ -31,7 +31,7 @@
             What payment methods do you accept? 
             <button type="button" class="accordion-button">
                 <svg class="svg" width="16" height="16">
-                    <use href="../img/icon.svg#icon-down"></use>
+                    <use href="/img/icon.svg#icon-down"></use>
                 </svg>
             </button>
             <div class="accordion-content">
@@ -43,7 +43,7 @@
             How can I contact you? 
             <button type="button" class="accordion-button">
                 <svg class="svg" width="16" height="16">
-                    <use href="../img/icon.svg#icon-down"></use>
+                    <use href="/img/icon.svg#icon-down"></use>
                 </svg>
             </button>
             <div class="accordion-content">
@@ -55,7 +55,7 @@
             Do you provide advice or support? 
             <button type="button" class="accordion-button">
                 <svg class="svg" width="16" height="16">
-                    <use href="../img/icon.svg#icon-down"></use>
+                    <use href="/img/icon.svg#icon-down"></use>
                 </svg>
             </button>
             <div class="accordion-content">
@@ -67,7 +67,7 @@
             What does the process of developing a software product look like from idea to implementation? 
             <button type="button" class="accordion-button">
                 <svg class="svg" width="16" height="16">
-                    <use href="../img/icon.svg#icon-down"></use>
+                    <use href="/img/icon.svg#icon-down"></use>
                 </svg>
             </button>
             <div class="accordion-content">
@@ -97,7 +97,7 @@
         panelClass: "accordion-content",
         onOpen: (currElement) => {
             let panel = currElement.querySelector(".accordion-content");
-            let icon = currElement.querySelector(".accordion-button use");
+            let icon = currElement.querySelector(".accordion-button svg use");
             if (panel) {
                 panel.style.maxHeight = panel.scrollHeight + "px"; 
                 panel.style.opacity = "1";
@@ -110,7 +110,7 @@
     
         onClose: (currElement) => {
             let panel = currElement.querySelector(".accordion-content");
-            let icon = currElement.querySelector(".accordion-button use");
+            let icon = currElement.querySelector(".accordion-button svg use");
             if (panel) {
                 panel.style.maxHeight = "0px"; 
                 panel.style.opacity = "0";
