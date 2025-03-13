@@ -12,3 +12,4 @@ import './js/faq';
 import './js/reviews';
 import './js/mobile';
 import './js/projects';
+import './js/footer';
