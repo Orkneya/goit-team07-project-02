@@ -87,19 +87,19 @@ document.addEventListener('DOMContentLoaded', function () {
   const menu = document.getElementById('menu');
 
   // Відкриття меню
-  openMenuBtn.addEventListener('click', function () {
-    menu.classList.add('active');
-  });
+  // openMenuBtn.addEventListener('click', function () {
+  //   menu.classList.add('active');
+  // });
 
   // Закриття меню
-  closeMenuBtn.addEventListener('click', function () {
-    menu.classList.remove('active');
-  });
+  // closeMenuBtn.addEventListener('click', function () {
+  //   menu.classList.remove('active');
+  // });
 
-  // Закриття при кліку поза меню
-  document.addEventListener('click', function (event) {
-    if (!menu.contains(event.target) && !openMenuBtn.contains(event.target)) {
-      menu.classList.remove('active');
-    }
-  });
+  // // Закриття при кліку поза меню
+  // document.addEventListener('click', function (event) {
+  //   if (!menu.contains(event.target) && !openMenuBtn.contains(event.target)) {
+  //     menu.classList.remove('active');
+  //   }
+  // });
 });
