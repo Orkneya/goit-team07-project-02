@@ -1,73 +1,61 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Keyboard } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/autoplay';
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
-import Accordion from "accordion-js";
-import "accordion-js/dist/accordion.min.css";
+const swiper = new Swiper('.about-skills-swiper', {
+  slidesPerView: 6,
+  slidesPerGroup: 1,
+  loop: true,
 
+  modules: [Navigation, Autoplay],
 
-new Swiper(".about-skills-swiper", {
-    slidesPerView: 6,
-    slidesPerGroup: 1,
-    loop: true,
+  navigation: {
+    nextEl: '.about-skills-btn',
+  },
 
-    modules: [Navigation, Pagination, Keyboard ],
+  autoplay: {
+    delay: 2000,
+  },
 
-    navigation: {
-      nextEl: ".about-skills-btn",
+  keyboard: {
+    enabled: false,
+  },
+
+  mousewheel: {
+    invert: true,
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
     },
-  
-    keyboard: {
-      enabled: true,
-      pageUpDown: true,
+    768: {
+      slidesPerView: 3,
     },
-  
-    mousewheel: {
-      invert: true,
+    1440: {
+      slidesPerView: 6,
     },
-  
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 3,
-      },
-      1440: {
-        slidesPerView: 6,
-      },
-    },
+  },
+});
 
-    on: {
-      slideChangeTransitionEnd: function () {
-        document.querySelectorAll(".about-skills-txt").forEach((e) => {
-          e.classList.remove("ellips-red");
-        });
-  
-        const visibleSlides = document.querySelectorAll(".swiper-slide");
-        const firstVisibleSlide = Array.from(visibleSlides).find((slide) => {
-          return slide.getBoundingClientRect().left >= 0;
-        });
-  
-        if (firstVisibleSlide) {
-          const firstTextElement =
-            firstVisibleSlide.querySelector(".about-skills-txt");
-          if (firstTextElement) {
-            firstTextElement.classList.add("ellips-red");
-          }
-        }
-      },
-    },
-  });
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight') {
+    swiper.slideNext();
+  } else if (e.key === 'ArrowLeft') {
+    swiper.slidePrev();
+  }
+});
 
-  new Accordion(".about-info", {
-    duration: 500,
-    showMultiple: true,
-    openOnInit:[0],
-    elementClass:"about-info-item",
-    triggerClass:"about-info-btn",
-    panelClass:"about-info-content",
-    activeClass:"is-active",
-  
-  });  
+new Accordion('.about-info', {
+  duration: 500,
+  showMultiple: true,
+  openOnInit: [0],
+  elementClass: 'about-info-item',
+  triggerClass: 'about-info-btn',
+  panelClass: 'about-info-content',
+  activeClass: 'is-active',
+});
