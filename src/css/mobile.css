@@ -1,12 +1,14 @@
 .mobile-menu {
   position: fixed;
   top: 0;
-  right: 0;
-  z-index: 100;
-  width: 373px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1001;
+  max-width: 373px;
   height: 812px;
   overflow: auto;
-  background-image: url('../img/Background.jpg');
+  background-image: url('/img/Background.jpg');
   background-size: cover;  
   background-position: center; 
   background-repeat: no-repeat;

@@ -3,7 +3,6 @@ html {
   }
 
 .content-benefits {
-    /* background-color: black; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,10 +11,8 @@ html {
   }
   
   .container-benefits {
-    /* background-color: black; */
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     text-align: left;
     gap: 20px;
     width: 100%;
